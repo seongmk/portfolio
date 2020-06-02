@@ -3,84 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>홍길동의 포트폴리오</title>
+  <title>포트폴리오</title>
   <!-- jQuery -->
   <script src="js/jquery-3.5.0.min.js"></script>
-  <!-- FullPage -->
-  <link rel="stylesheet" type="text/css" href="css/fullpage.css">
-  <script type="text/javascript" src="js/fullpage.js"></script>
-  <script src="js/portfolio_fullpage.js"></script>
-
+  
   <!-- swiper-slider -->
   <link rel="stylesheet" href="css/swiper.css">
   <script src="js/swiper.js"></script>
   <script src="js/slider_port.js"></script>
 
-  <script>
-    $(function(){
-      
-
-      // start 스킵메뉴이벤트
-      $('.skip_menu>li>a').focus(function(){
-        $(this).parent().css('top',0);
-      });
-      $('.skip_menu>li>a').focusout(function(){
-        $(this).parent().css('top','-100%');
-      });
-      // end 스킵메뉴이벤트
-
-      // start 버거메뉴이벤트
-      $('#open_nav_btn').click(function(){
-        $('.nav>ul').css('display','block');
-        $('#open_nav_btn').css('display','none');
-      });
-      $('#close_nav_btn').click(function(){
-        $('.nav>ul').css('display','none');
-        $('#open_nav_btn').css('display','block');
-      });
-      // end 버거메뉴이벤트
-
-      // start 리사이즈이벤트
-      $(window).resize(function(){
-        navMenu();
-      });
-      //end 리사이즈이벤트
-
-      //start 문서준비
-      navMenu();
-      //end 문서준비
-
-      //start 네비게이션변환함수
-      function navMenu(){
-        var winWidth=$(window).width();
-        if(winWidth>=768){
-          $('.nav>ul').css('display','flex');
-          $('#open_nav_btn').css('display','none');
-        }else{
-          $('.nav>ul').css('display','none');
-          $('#open_nav_btn').css('display','block');
-        }
-      }
-      //end 네비게이션변환함수
-
-    })
-  </script>
-
   
+  <!-- 사용자스타일 -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/skip.css">
   <link rel="stylesheet" href="css/header.css">
-  
+  <link rel="stylesheet" href="css/section.css">
+  <link rel="stylesheet" href="css/welcome.css">
+
+
+  <!-- 사용자js -->
+  <script src="js/skip.js"></script>
+  <script src="js/header.js"></script>
   <style>
-    .section{
-      box-sizing:border-box;
-      padding-top:80px;
-    }
-    .temp{
-      font-size:100px;
-      text-align:center;
-    }
     .swiper-slide{
       width:400px;
     }
@@ -118,49 +63,54 @@
         </nav>
       </div>
     </header>
-    <div id="fullpage">
-      <div class="section" id="welcome">
-        <div class="content">
-          <p class="temp">welcome</p>
+    <section class="section" id="welcome">
+      <div class="content">
+        <video autoplay loop muted poster="media/ocean.jpg">
+          <!-- <source src="media/ocean.ogv">
+          <source src="media/ocean.webm">
+          <source src="media/ocean.mp4"> -->
+            <source src="media/Clouds.mp4">
+        </video>
+        
+        <div class="btn_box">
+          <a href="#portfolio"><input type="button" value="Portfolio"></a>
+          <a href="https://github.com/seongmk" target="_blank"><input type="button" value="GitHub"></a>
         </div>
       </div>
-      <div class="section" id="i_am">
-        <div class="content">
-          <p class="temp">나는?</p>
-        </div>
+    </section>
+    <section class="section" id="i_am">
+      <div class="content">
+        <p class="temp">나는?</p>
       </div>
-      <div class="section" id="skill">
-        <div class="content">
-          <p class="temp">기술</p>
-        </div>
+    </section>
+    <section class="section" id="skill">
+      <div class="content">
+        <p class="temp">기술</p>
       </div>
-      <div class="section" id="portfolio">
-        <div class="content">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a target="_blank" href="https://pam7462.github.io/megabox">
-                  <img src="images/megabox.png" alt="megabox">
-                </a>
-              </div>
-              <div class="swiper-slide">카카오톡</div>
-              <div class="swiper-slide">한솔제지</div>
-              <div class="swiper-slide">라인</div>
-              <div class="swiper-slide">메가박스</div>
-              <div class="swiper-slide">인디고</div>
+    </section>
+    <section class="section" id="portfolio">
+      <div class="content">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a target="_blank" href="https://seongmk.github.io/megabox">
+                <img src="images/megabox.png" alt="megabox">
+              </a>
             </div>
+            <div class="swiper-slide">카카오톡</div>
+            <div class="swiper-slide">한솔제지</div>
+            <div class="swiper-slide">라인</div>
+            <div class="swiper-slide">메가박스</div>
+            <div class="swiper-slide">인디고</div>
           </div>
         </div>
       </div>
-      <div class="section" id="tel">
-        <div class="content">
-          <p class="temp">연락줘</p>
-        </div>
+    </section>
+    <section class="section" id="tel">
+      <div class="content">
+        <p class="temp">연락줘</p>
       </div>
-
-    </div>
+    </section>
   </div>
-
-
 </body>
 </html>
