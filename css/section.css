@@ -6,6 +6,25 @@
     height:100vh;
     margin:0 auto;
     padding-top:80px;
+    padding-bottom:50px;
+}
+.section>.content>h2{
+    padding-top:60px;
+    padding-bottom:30px;
+    font-style: 3em;
+    text-align:center;
+    color:#333;
+}
+.section[id="i_am"] h2,
+.section[id="portfolio"] h2{
+    color:#fff;
+}
+.section>.content>p{
+    text-decoration: underline;
+    color:#666;
+    text-align: center;
+    font-style: italic;
+    font-size:1.2em;
 }
 
 /* 태블릿스타일 */
@@ -22,7 +41,4 @@
 
 
 @media(max-width:767px){
-    .section{
-        height:100vw;
-    }
 }
