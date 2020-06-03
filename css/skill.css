@@ -1,0 +1,69 @@
+@charset 'utf-8';
+
+.skill_list>li{
+    width:32%;
+}
+.skill_list>li>.img_box>img{
+    width:100%;
+}
+.progress{
+    width:300PX;
+    height:20PX;
+    background-color:#f7f7f7;
+    position:relative;
+}
+.progress>span{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    font-size:0.9em;
+}
+.skill_list>li .progress::before{
+    content:'';
+    display:block;
+    width:0;
+    height:100%;
+    background-color:#ccc;
+    transition:0.3s;
+}
+
+.skill_list>li:hover::after{
+    content:'';
+    display:block;
+    width:0;
+    height:0;
+}
+
+.skill_list>li:nth-child(1):hover .progress::before{
+    width:90%;
+}
+.skill_list>li:nth-child(2):hover .progress::before{
+    width:80%;
+}
+.skill_list>li:nth-child(3):hover .progress::before{
+    width:70%;
+}
+.skill_list>li:nth-child(4):hover .progress::before{
+    width:80%;
+}
+.skill_list>li:nth-child(5):hover .progress::before{
+    width:80%;
+}
+.skill_list>li:nth-child(6):hover .progress::before{
+    width:80%;
+}
+
+
+@media (max-width:960px){   
+    .skill_list>li{
+        width:50%;
+    }
+}
+
+
+@media(max-width:767px){
+    .skill_list>li{
+        width:100%;
+    }
+}

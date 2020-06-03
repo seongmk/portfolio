@@ -43,6 +43,7 @@
 
 /* 테블릿 스타일 */
 @media (max-width:960px){
+  #welcome{height:500px;}
   #welcome video{
     min-width:900px;
   }
@@ -54,6 +55,7 @@
 
 /* 모바일 스타일 */
 @media (max-width:767px){
+  #welcome{height:100vw;}
   #welcome video{
     width:auto;
     max-width:auto;
