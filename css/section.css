@@ -30,7 +30,7 @@
 /* 태블릿스타일 */
 @media (max-width:960px){
     .section{
-        height:500px;
+        height:100%;
     }
 }
 

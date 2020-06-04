@@ -77,9 +77,6 @@
     .skill_list>li{
       width:50% !important;
     }
-    .skill_list>li:nth-child(5){
-      width:100%;
-    }
   }
 
 
