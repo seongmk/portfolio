@@ -1,0 +1,16 @@
+$(function(){
+    $('.swiper-slide').click(function(){
+        $('.megabox').click(function(){
+            window.open('https://seongmk.github.io/megabox/pc_web.html')
+        });
+        $('.iwc').click(function(){
+            window.open('https://seongmk.github.io/iwc/')
+        });
+        $('.kia').click(function(){
+            window.open('https://seongmk.github.io/KIA/')
+        });
+        $('.kakao').click(function(){
+            window.open('https://seongmk.github.io/kakao/')
+        });
+    })
+})

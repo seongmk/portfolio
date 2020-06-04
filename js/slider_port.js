@@ -1,7 +1,22 @@
 $(function(){
-  var mySwiper = new Swiper ('.swiper-container', {
+  var swiper = new Swiper('.swiper-container', {
+    // Default parameters
+    spaceBetween: 30,
     loop: true,
-    spaceBetween:20,
-    slidesPerView:'auto',
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1.5,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2,
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 3,
+      }
+    }
   })
 })
