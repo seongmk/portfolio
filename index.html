@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="포트폴리오,portfolio">
+  <meta property="og:url" content="https://seongmk.github.io/portfolio/.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="tourist">
+  <meta property="og:image" content="images/portofolio.png">
+  <meta property="og:description" content="포트폴리오">
   <title>포트폴리오</title>
   <!-- jQuery -->
   <script src="js/jquery-3.5.0.min.js"></script>
@@ -29,8 +35,16 @@
 
   <!-- 사용자js -->
   <script src="js/skip.js"></script>
-  <script src="js/header.js"></script>
+  <script src="js/header_footer.js"></script>
   <script src="js/portfolio.js"></script>
+  <script>
+    $(function(){
+      $('body').on('mousewheel',function(e){
+        var vectorY=e.originalEvent.wheelDelta;
+      });
+      console.log(vectorY);
+    })
+  </script>
   
 
 </head>
@@ -207,7 +221,7 @@
             </li>
             <li class="swiper-slide kia">
               <div class="slide_img">
-                <img src="images/mega-box.png" alt="megabox">
+                <img src="images/kia.png" alt="kia">
               </div>
               <div class="slide_txt">
                 <h3>KIA<span>리뉴얼</span></h3>
