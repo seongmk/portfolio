@@ -18,7 +18,9 @@
   <script src="js/swiper.js"></script>
   <script src="js/slider_port.js"></script>
 
-  
+  <!-- parallax -->
+  <script src="js/parallax.min.js"></script>
+
   <!-- 사용자스타일 -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/base.css">
@@ -38,15 +40,40 @@
   <script src="js/header_footer.js"></script>
   <script src="js/portfolio.js"></script>
   <script>
-    $(function(){
-      $('body').on('mousewheel',function(e){
-        var vectorY=e.originalEvent.wheelDelta;
-      });
-      console.log(vectorY);
-    })
+    $('.parallax-window').parallax({
+      imageSrc: 'images/skill_back.jpg',
+      speed:0.5,
+      zIndex:-100,
+    });
+    $('.parallax-window2').parallax({
+      imageSrc: 'images/skill_back.jpg',
+      speed:0.2,
+      // zIndex:-99,
+    });
+    
   </script>
+  <style>
+    #i_am{
+      position: relative;
+    }
+    .parallax-window,
+    .parallax-window2{
+      min-height: 400px;
+      background: transparent !important; 
+      position:absolute;
+      left: 0;
+      top: 0;
+      width:100%;
+      height:100%;
+    }
+    
+    .parallax-window2{
+      width:10%;
+      height:10%;
+        
+    }
+  </style>
   
-
 </head>
 <body>
   <ul class="skip_menu">
@@ -93,6 +120,8 @@
       </div>
     </section>
     <section class="section" id="i_am">
+      <div class="parallax-window" data-parallax="scroll" data-image-src="../images/skill_back.jpg"></div>
+      <div class="parallax-window2" data-parallax="scroll" data-image-src="../images/skill_back.jpg"></div>
       <div class="content">
         <h2>ABOUT ME</h2>
         <p>안녕하세요. 신입디자이너</p>

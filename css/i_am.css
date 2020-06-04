@@ -1,9 +1,10 @@
 @charset 'utf-8';
-#i_am{
+/* #i_am{
   background:url('../images/clouds.jpg') center no-repeat;
   background-size:cover;
   background-attachment:fixed;
-}
+} */
+
 .section_list{
   display:flex;
   flex-flow:row wrap;
