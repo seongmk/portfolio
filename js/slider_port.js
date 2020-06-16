@@ -11,11 +11,11 @@ $(function(){
       },
       // when window width is >= 480px
       480: {
-        slidesPerView: 2,
+        slidesPerView: 2.5,
       },
       // when window width is >= 640px
       640: {
-        slidesPerView: 3,
+        slidesPerView: 3.5,
       }
     }
   })
