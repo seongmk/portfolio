@@ -1,5 +1,5 @@
 $(function(){
-  var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('.swiper-container,.swiper-container02', {
     // Default parameters
     spaceBetween: 30,
     loop: true,

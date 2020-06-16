@@ -1,19 +1,34 @@
-@charset 'utf-8' ;
+@charset "utf-8" ;
 /* 기본스타일 */
 .section{
     width:100%;
+    height:130vh;
     max-width:1980px;
-    height:100vh;
     margin:0 auto;
     padding-top:80px;
     padding-bottom:50px;
+}
+.section01{
+    height:130vh;
+}
+.section02{
+    height:130vh;
+}
+.section03{
+    height:110vh;
+}
+.section04{
+    height:130vh;
+}
+.section05{
+    height:130vh;
 }
 .section>.content>h2{
     padding-top:60px;
     padding-bottom:30px;
     font-style: 3em;
     text-align:center;
-    color:#333;
+    color:black;
 }
 .section[id="i_am"] h2,
 .section[id="portfolio"] h2{
